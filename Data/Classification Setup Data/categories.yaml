@@ -1,0 +1,58 @@
+# Goal Categories for Classification
+# These categories will be used by the LLM to classify each goal node
+
+categories:
+  - name: "Places of interest"
+    description: "Goals about visiting famous landmarks, historical sites, or notable locations"
+    
+  - name: "Travel destinations"
+    description: "Goals about traveling to specific countries, cities, or regions, islands, etc. If specific events are mentioned, place it under the category 'Events & concerts' instead. If the main focus of the destination is nature, place it under the category 'Nature'."
+    
+  - name: "Nature"
+    description: "Goals related to visiting nature related places, such as mountains, national parks, etc."
+    
+  - name: "Food"
+    description: "Goals about trying new cuisines, cooking, dining experiences, or food-related activities. If the goal says 'learn' how to cook something, put it under the goal 'New Skills'"
+    
+  - name: "Sports"
+    description: "Goals about participating sports (not watching sports, which goes under the category 'Events and concerts'), fitness activities, or athletic pursuits"
+    
+  - name: "Experiences"
+    description: "Goals about trying new experiences, adventures, or daring activities"
+    
+  - name: "Media consumption"
+    description: "Goals about watching movies, TV shows, reading books, or consuming media"
+    
+  - name: "Events & concerts"
+    description: "Goals about attending concerts, festivals, events (also including sports events), or live performances"
+    
+  - name: "Academic and professional achievements"
+    description: "Goals about education, career advancement, certifications, or professional milestones"
+    
+  - name: "Relationships & social life"
+    description: "Goals about building and maintaining relationships, social connections, or improving social life"
+    
+  - name: "New skills"
+    description: "Goals about learning new skills, hobbies, or abilities"
+    
+  - name: "Religion"
+    description: "Goals related to spiritual growth, religious practices, or faith-based activities"
+    
+  - name: "Health"
+    description: "Goals about physical and mental health, medical care, wellness, or healthy living"
+    
+  - name: "Acts of kindness/altruism"
+    description: "Goals about helping others, volunteering, charitable activities, or acts of kindness"
+    
+  - name: "Creativity"
+    description: "Goals about artistic expression, creative projects, or developing creative talents"
+
+# Location Categories for Classification
+# These categories will be used by the LLM to classify location mentions in goals
+
+locations:
+  - name: "Location mentioned"
+    description: "Goals that mention any specific location (country, region, city, landmark, specific locations such as buildings or venues locatable by GPS coordinates, etc.)"
+    
+  - name: "No location mentioned"
+    description: "Goals that do not mention any specific location"

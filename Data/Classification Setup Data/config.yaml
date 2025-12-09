@@ -1,0 +1,15 @@
+api:
+  provider: "google"
+  #model: "models/gemma-3-27b-it"      # Model used for our initial category classification in B.3
+  model: "models/gemini-2.5-flash-lite" # Model used for our location classification in B.4
+  api_key: "API_KEY_REMOVED"
+  
+  # API parameters
+  temperature: 0.1  # Lower for more consistent classifications
+  max_tokens: 8192  # Increased for batch processing
+  top_p: 0.3
+
+# Rate limiting
+rate_limit:
+  requests_per_minute: 30
+  delay_between_requests: 0.5
